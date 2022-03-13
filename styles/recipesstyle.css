@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/**/
+#topDiv{
+    background-image: url("../img/imageBG.jpg");
+    background-size: cover;
+    height: 60vh;
+}
+/**/
+#underNavTitle{
+    color: white;
+    font-size: 7vw;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+/*first article*/
+#firstArticle{
+    display: flex;
+    max-height: 30vh;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#firstArticleLeft{
+    width: 25vw;
+    font-size: 2.5vh;
+    text-align: justify;
+    flex-grow: 2;
+}
+#firstArticleCenter{
+    width: 25vw;
+    height: 25vw;
+    padding: 25px;
+    background-color: white;
+    border-radius: 30px;
+    transform: translate(0px, -30vh);
+}
+#firstArticleCenterImg1{
+    width: 25vw;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px black;
+}
+#firstArticleCenterImg2{
+    width: 50px;
+    float: right;
+    transform: translate(-25px, -23vw);
+}
+#firstArticleRight{
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+}
+.firstArticleRightImg{
+    height: 50px;
+}
+/*second article*/
+#secondArticle{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.secondArticleImg{
+    height: 50px;
+    padding-right: 20px;
+}
+.secondArticleTitle{
+    font-size: 25pt;
+    font-weight: bold;
+}
+#secondArticlePar, #secondArticleList{
+    margin-top: 25px;
+}
+#secondArticlePar, #secondArticleList>li{
+    font-size: 13pt;
+}
+#secondArticleList{
+    max-width: 50vw;
+}
+#secondArticleList>li{
+    margin-bottom: 10px;   
+}
+/**/
+footer{
+    background-color: lightgrey;
+    margin: 5vh 0;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+#commentDiv{
+    display: flex;
+    width: 50vw;
+    padding: 15px;
+    margin: 0 auto;
+}
+#commentDivContent{
+    flex-grow: 2;
+    margin: 0 15px;
+}
+#commentUserImg, #commentUserStarsImg{
+    height: 50px;
+}
+#commentDivUserName{
+    font-weight: bold;
+}
+#commentDivDate{
+    font-size: 10pt;
+    color: grey;
+}
+#commentDivText{
+    margin-top: 10px;
+}
+#commentInputDiv{
+    background-color: white;
+    display: flex;
+    width: 50vw;
+    padding: 15px 30px;
+    margin: 0 auto;
+    border-top: solid 1px grey;
+    border-bottom: solid 1px grey;
+}
+#commentInput{
+    flex-grow: 2;
+    margin: 0 15px;
+}
+#commentInputDivUserImg{
+    height: 40px;
+}
+#commentSubmitImg{
+    height: 25px;
+    align-self: center;
+}
+#commentInput{
+    border-width: 0;
+}
+/**/
+@media (max-width: 1440px) {
+    /**/
+    #firstArticle{
+        max-height: 30vh;
+    }
+    #firstArticleLeft {
+        width: 27vw;
+    }
+    #firstArticleCenter{
+        width: 25vw;
+        transform: translate(0px, -30vh);
+    }
+    #firstArticleCenterImg1{
+        width: 25vw;
+    }
+    #firstArticleCenterImg2{
+        width: 40px;
+        transform: translate(-25px, -23vw);
+    }
+    .firstArticleRightDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1024px) {
+    /**/
+    #topDiv{
+        height: 40vh;
+    }
+    /**/
+    #firstArticleCenter{
+        width: 25vw;
+        transform: translate(0px, -20vh);
+    }
+    #firstArticleCenterImg1{
+        width: 25vw;
+    }
+    #firstArticleCenterImg2{
+        width: 30px;
+        transform: translate(-25px, -23vw);
+    }
+    #firstArticleLeft{
+        width: 25vw;
+    }
+    #firstArticleRight{
+        flex-direction: column;
+        align-items: center;
+    }
+    #firstArticleRightImgStars{
+        width: 20vw;
+    }
+    .firstArticleRightImg{
+        height: 40px;
+    }
+    /**/
+    #commentUserStarsImg{
+        height: 40px;
+    }
+}
+@media (max-width: 768px) {
+    /**/
+    #topDiv{
+        height: 40vh;
+    }
+    /**/
+    #firstArticleLeft{
+        font-size: 11pt;
+        width: 25vw;
+    }
+    #firstArticleCenter{
+        width: 25vw;
+        transform: translate(0px, -15vh);
+    }
+    #firstArticleCenterImg1{
+        width: 25vw;
+    }
+    #firstArticleCenterImg2{
+        width: 25px;
+        transform: translate(-15px, -23vw);
+    }
+    /**/
+    #commentDiv{
+        width: 75vw;
+    }
+    #commentInputDiv{
+        width: 75vw;
+    }
+    #commentUserStarsImg{
+        height: 30px;
+    }
+}
+@media (max-width: 567px) {
+    body{
+        position: absolute;
+    }
+}
+@media (max-width: 425px) {
+    body{
+        position: absolute;
+    }
+    /**/
+    #topDiv{
+        height: 30vh;
+    }
+    #underNavTitle{
+        font-size: 12vw;
+    }
+    /**/
+    #firstArticle{
+        display: block;
+        max-height: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #firstArticleLeft{
+        width: 100vw;
+        margin: 0 auto;
+        font-size: 18pt;
+    }
+    #firstArticleCenter{
+        margin: 0 auto;
+        width: 50vw;
+        height: 50vw;
+        transform: none;
+    }
+    #firstArticleCenterImg1{
+        width: 50vw;
+    }
+    #firstArticleCenterImg2{
+        width: 35px;
+        transform: translate(-15px, -45vw);
+    }
+    #firstArticleRight{
+        flex-direction: row;
+        width: 100vw;
+        margin: 0 40vw;
+    }
+    #firstArticleRightImgStars{
+        width: 40vw;
+    }
+    /**/
+    #secondArticle{
+        display: block;
+    }
+    .secondArticleImg{
+        height: 40px;
+    }
+    .secondArticleTitle{
+        font-size: 23pt;
+    }
+    #secondArticlePar{
+        margin-bottom: 25px;
+    }
+    #secondArticlePar, #secondArticleList>li{
+        font-size: 15pt;
+    }
+    #secondArticleList{
+        max-width: none;
+    }
+    /**/
+    #commentDiv{
+        width: 100vw;
+    }
+    #commentUserImg, #commentUserStarsImg{
+        height: 30px;
+    }
+    #commentInputDiv{
+        width: 100vw;
+    }
+    #commentInputDivUserImg{
+        height: 25px;
+    }
+    #commentSubmitImg{
+        height: 20px;
+    }
+    #commentDiv{
+        display: flex;
+    }
+}

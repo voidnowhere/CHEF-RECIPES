@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navDiv{
+    background-image: url("../img/imageBG.jpg");
+    background-size: cover;
+}
+/*menu*/
+#menu{
+    display: flex;
+    justify-content: center;
+    gap: 15vw;
+    padding: 2vh;
+}
+#menu a{
+    color: rgb(200, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 2.5vw;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+#menu a:hover{
+    border-bottom-color: rgb(200, 0, 0);
+    transition-duration: 0.5s;
+}
+/*food*/
+#appretizers, #dessert{
+    background-color: rgb(233, 233, 233);
+}
+#appretizers, #entrees, #dessert{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8vh;
+    padding-bottom: 3vh;
+}
+.foodImg{
+    display: block;
+    height: 15vw;
+    width: 20vw;
+    margin: 0 auto;
+}
+.foodHeart{
+    width: 4vw;
+    transform: translate(15vw, -14vw);
+}
+/* @media (min-width: 769px) {
+    .foodImg:hover{
+        transform: scale(1.3);
+        transition-duration: 0.5s;
+    }
+    .foodImg:hover + .foodHeart{
+        transform: translate(18vw, -16vw);
+        transition-duration: 0.5s;
+    }
+    .foodImg:hover + .foodHeart + .foodDetail{
+        display: flex;
+    }
+} */
+.foodDetail{
+    display: none;
+    flex-direction: column;
+}
+.foodDetail h1{
+    text-align: center;
+    color: rgb(200, 0, 0);
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 1vh;
+}
+.foodImpr{
+    display: flex;
+    justify-content: space-evenly;
+}
+.foodImpr img{
+    width: 5vh;
+}
+.foodImpr div{
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    #appretizers, #entrees, #dessert{
+        justify-content: space-around;
+        padding-top: 5vh;
+        padding-bottom: 3vh;
+    }
+    .foodDetail{
+        display: flex;
+    }
+    .foodImg{
+        height: 20vw;
+        width: 25vw;
+    }
+    .foodHeart{
+        width: 4vw;
+        transform: translate(20vw, -19vw);
+    }
+}
+
+@media (max-width: 666px) {
+    body{
+        position: absolute;
+    }
+    #menu{
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+    }
+    #menu a{
+        font-size: 25pt;
+    }
+    #appretizers, #entrees, #dessert{
+        flex-direction: column;
+        padding: 5vw 0;
+    }
+    .foodDetail{
+        display: flex;
+        margin-bottom: 5vw;
+    }
+    .foodImg{
+        height: 300px;
+        width: 400px;
+    }
+    .foodHeart{
+        width: 30px;
+        transform: translate(450px, -275px);
+    }
+    .foodImpr img{
+        width: 50px;
+    }
+    .foodImpr span{
+        font-size: 15pt;
+    }
+}

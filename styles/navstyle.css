@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+#navLogoTitle{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+#navLogo{
+    height: 40px;
+    margin-right: 15px;
+}
+#navTitle{
+    color: white;
+}
+#navLinks{
+    display: flex;
+    margin-right: 25px;
+}
+.navLink{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.navLink:hover, #home #homeLink, #recipes #recipesLink, #about #aboutLink{
+    background-color: rgba(25, 25, 25, 0.75);
+}
+.subNavLink{
+    align-self: center;
+}
